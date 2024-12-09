@@ -9,7 +9,7 @@ let fullName: string = "Puneet Rawat";
 let age: number = 23;
 let isStudent: boolean = true;
 
-function operations(a: number, b: number): [number, number, number, number] {
+function operations(a: number, b: number): number[] {
     let sum: number = a + b;
     let diff: number = a - b;
     let mul: number = a * b;

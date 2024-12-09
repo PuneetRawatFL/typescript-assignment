@@ -14,6 +14,17 @@ function display(a: string, b: any): void {
 display("Hello", "World");
 // display("Hello", 23); //run-time error - toUpperCase is not a function
 
+function displayAgain(a: string, b: unknown): void {
+    if (typeof a === "string" && typeof b === "string") {
+        a.toUpperCase();
+        b.toUpperCase();
+    } else {
+        console.error("string function can only be used on string types");
+    }
+    console.log(a, b);
+}
+displayAgain("Hello", "World");
+
 //never ending function
 function neverReturn(): never {
     throw new Error("Never ending function");
